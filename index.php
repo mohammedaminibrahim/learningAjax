@@ -11,7 +11,14 @@
     $(document).ready(function(){
        $("#btn").click(function(){
         $("#test").load(
-            "data.txt"
+            "data.txt",
+            {firstname : "Amin",
+             lastname : "Ibrahim"
+            },
+
+            function(){
+                alert("Hi there");
+            }
         )
        })
     })
